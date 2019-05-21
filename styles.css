@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
 * {
@@ -9,10 +10,14 @@ html, body {
 }
 
 .main-container {
-    margin: ;
-    width: ;
-    height: ;
-    background-color: ;
-    border-radius: ;
-    box-shadow: ;
+    margin: 0 auto;
+    width: 80vw;
+    height: 90vh;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 1px 5px 20px 1px #95a5a6;
+}
+
+h1 {
+    
 }
