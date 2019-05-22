@@ -18,6 +18,15 @@ html, body {
     box-shadow: 1px 5px 20px 1px #95a5a6;
 }
 
-h1 {
-    
+header h1 {
+
+}
+
+.background {
+    margin: 0 auto;
+    width: 90%;
+    height: 70%;
+    background-color: #bdc3c7;
+    border-radius: 20px;
+    opacity: 0.4;
 }
