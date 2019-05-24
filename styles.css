@@ -29,12 +29,14 @@ header h1 {
     vertical-align: middle;
     font-size: 1.5rem;
     letter-spacing: 5px;
+    text-decoration: underline;
 }
 
 button#data-file {
     padding: 9px;
     border-radius: 20px;
     background: linear-gradient(90deg, #019875 10%, #2ecc71 100%);
+    font-family: 'PT Sans', sans-serif;
     border-style: none;
     vertical-align: middle;
     color: #FFF;
@@ -52,7 +54,16 @@ button#data-file {
 
 .background .text-container {
     display: inline-block;
+    margin: 40px 0 0 40px;
     width: 40%;
+    height: 80%;
+    border-radius: 20px;
     background-color: #FFF;
+    /*border: 1px solid;*/
+    overflow: auto;
 }
 
+#text {
+    text-align: center;
+    padding: 15px;
+}
