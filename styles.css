@@ -11,6 +11,7 @@ html, body {
 
 .main-container {
     margin: 0 auto;
+    margin-top: 20px;
     width: 80vw;
     height: 90vh;
     background-color: #FFF;
@@ -32,7 +33,7 @@ header h1 {
     text-decoration: underline;
 }
 
-button#data-file {
+button#data-file, button#count {
     padding: 9px;
     border-radius: 20px;
     background: linear-gradient(90deg, #019875 10%, #2ecc71 100%);
@@ -43,13 +44,14 @@ button#data-file {
     cursor: pointer;
 }
 
+
 .background {
     margin: 0 auto;
     width: 90%;
-    height: 70%;
-    background-color: #bdc3c7;
+    height: 80%;
+    background-color: #dfe6e9;
     border-radius: 20px;
-    opacity: 0.4;
+    /*opacity: 0.4;*/
     text-align: center;
     padding-top: 0px;
 }
@@ -68,33 +70,34 @@ button#data-file {
     overflow-x: hidden;
 }
 
-.background .text-container::-webkit-scrollbar {
+.background .text-container::-webkit-scrollbar, .background #add-table::-webkit-scrollbar {
     width: 20px;
 }
 
 /* Track */
-.background .text-container::-webkit-scrollbar-track {
+.background .text-container::-webkit-scrollbar-track, .background #add-table::-webkit-scrollbar-track {
     box-shadow: inset 0 0 45px rgba(0,0,0,0.2); 
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
  
 /* Handle */
-.background .text-container::-webkit-scrollbar-thumb {
+.background .text-container::-webkit-scrollbar-thumb, .background #add-table::-webkit-scrollbar-thumb {
     background: linear-gradient(90deg, #019875 10%, #2ecc71 100%);   
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
 /* Handle on hover */
-.background .text-container::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+.background .text-container::-webkit-scrollbar-thumb:hover, .background #add-table::-webkit-scrollbar-thumb:hover {
+  background: #019875; 
 }
 
 #text {
     text-align: left;
     /*border: 1px solid;*/
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .background #add-table {
@@ -108,5 +111,21 @@ button#data-file {
     background-color: #FFF;
     /*border: 1px solid;*/
     overflow: auto;
-    overflow-x: hidden;
+}
+
+#add-table table {
+    width: 95%;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+#add-table th, #add-table td {
+    border: 1px solid grey;
+    padding: 4px;
+}
+
+button#count {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
 }

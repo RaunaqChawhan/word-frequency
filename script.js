@@ -26,8 +26,8 @@ function getData() {
             .map(function(current) {
                 return [current[1], current[0]];
             }).sort(function(a, b) {
-                console.log(parseInt(a));
-                console.log(b);
+                /*console.log(parseInt(a));
+                console.log(b);*/
                 return parseInt(b) - parseInt(a);
             }).map(function(current, index) {
                 return [index + 1, current[0], current[1]];
@@ -62,8 +62,8 @@ function getData() {
                 
                 var displayTable = document.getElementById("add-table");
                 displayTable.appendChild(table);
-                console.log(displayTable);
-                console.log(sortedWords);
+                /*console.log(displayTable);
+                console.log(sortedWords);*/
             });
             
         }
