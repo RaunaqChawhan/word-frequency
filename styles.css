@@ -50,20 +50,63 @@ button#data-file {
     background-color: #bdc3c7;
     border-radius: 20px;
     opacity: 0.4;
+    text-align: center;
+    padding-top: 0px;
 }
 
 .background .text-container {
     display: inline-block;
-    margin: 40px 0 0 40px;
+    /*margin: 40px 0 0 40px;*/
+    /*margin-top: 40px;*/
+    margin-right: 30px;
     width: 40%;
     height: 80%;
     border-radius: 20px;
     background-color: #FFF;
     /*border: 1px solid;*/
     overflow: auto;
+    overflow-x: hidden;
+}
+
+.background .text-container::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+.background .text-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 45px rgba(0,0,0,0.2); 
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+ 
+/* Handle */
+.background .text-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #019875 10%, #2ecc71 100%);   
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Handle on hover */
+.background .text-container::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
 }
 
 #text {
-    text-align: center;
-    padding: 15px;
+    text-align: left;
+    /*border: 1px solid;*/
+    padding-left: 15px;
+}
+
+.background #add-table {
+    display: inline-block;
+    /*margin: 40px 0 0 40px;*/
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 40%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: #FFF;
+    /*border: 1px solid;*/
+    overflow: auto;
+    overflow-x: hidden;
 }
