@@ -3,6 +3,7 @@ var para = document.getElementById("text");
 
 button.addEventListener('click', getData);
 
+//Fetch the string from data file
 function getData() {
     var xhttp = new XMLHttpRequest();
     
@@ -10,7 +11,7 @@ function getData() {
         if(this.readyState === 4 && this.status === 200) {
             var receivedString = this.responseText;
             para.textContent = receivedString;
-            var extractedString = receivedString.replace(/[\?\.:;!,"@\-\(\)\/]/gm, " ")
+            var extractedString = receivedString.replace(/[\?\.:;!,"@\-\(\)\/]/gm, " ") //Breaking the entire string into individual words
                 .replace(/^[\d]+.?/gm, "")
                 .replace(/[\r\n\t]/gm, " ")
                 .replace(/[ ]{2,}/gm, " ")
@@ -19,7 +20,7 @@ function getData() {
             
             var wordFrequency = extractedString.split(/\s/)
             .reduce(function(output, word) {
-                return Object.assign(output, { [word]: output[word]? output[word] + 1 : 1 })
+                return Object.assign(output, { [word]: output[word]? output[word] + 1 : 1 }) //Storing the word with its count in form of object
             }, {});
             
             var sortedWords = Object.entries(wordFrequency)
@@ -30,13 +31,13 @@ function getData() {
                 console.log(b);*/
                 return parseInt(b) - parseInt(a);
             }).map(function(current, index) {
-                return [index + 1, current[0], current[1]];
+                return [index + 1, current[0], current[1]]; //Array containing serial no, count and word
             });
             
             var countButton = document.getElementById('count');
             countButton.addEventListener('click', function() {
                 var tableColumnHeading = ["Serial No.", "Count", "Word"];
-                var table = document.createElement("table");
+                var table = document.createElement("table");   //Creating table
                 
                 //Table headings
                 var tr = document.createElement("tr");
