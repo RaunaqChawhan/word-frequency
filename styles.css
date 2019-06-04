@@ -51,23 +51,17 @@ button#data-file, button#count {
     height: 80%;
     background-color: #dfe6e9;
     border-radius: 20px;
-    /*opacity: 0.4;*/
     text-align: center;
-    padding-top: 0px;
 }
 
 .background .text-container {
     display: inline-block;
-    /*margin: 40px 0 0 40px;*/
-    /*margin-top: 40px;*/
     margin-right: 30px;
     width: 40%;
     height: 80%;
     border-radius: 20px;
     background-color: #FFF;
-    /*border: 1px solid;*/
     overflow: auto;
-    overflow-x: hidden;
 }
 
 .background .text-container::-webkit-scrollbar, .background #add-table::-webkit-scrollbar {
@@ -95,21 +89,18 @@ button#data-file, button#count {
 
 #text {
     text-align: left;
-    /*border: 1px solid;*/
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .background #add-table {
     display: inline-block;
-    /*margin: 40px 0 0 40px;*/
     margin-top: 40px;
     margin-left: 30px;
     width: 40%;
     height: 80%;
     border-radius: 20px;
     background-color: #FFF;
-    /*border: 1px solid;*/
     overflow: auto;
 }
 
